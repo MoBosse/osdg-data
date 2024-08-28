@@ -8,7 +8,7 @@
 # This tells sdg-build to perform "translated builds" for each of the specified
 # languages. Each build is in its own subfolder - one for each language.
 languages:
-  - en
+  # - en
   - de
 
 # Destination directory
@@ -57,8 +57,8 @@ inputs:
     # need to change this setting. It is intended for sites where the data needs
     # to be "built" before being processed by sdg-build.
     git_data_dir: data
-  - class: InputSdmxMeta
-    meta_suffix: __GLOBAL
+# - class: InputSdmxMeta ---> https://github.com/open-sdg/open-sdg/discussions/2040
+  #  meta_suffix: __GLOBAL
 
 # Translations
 # ------------
